@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Cyber Café</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script language="javascript" type="text/javascript">
+		dayName = new Array("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+		monName = new Array("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro","outubro", "novembro", "dezembro")
+		now = new Date
+	</script>
+
+</head>
+
+<body>
+	<div id="principal">
+
+		<div id="topo">
+			<div id="logo"> <a href="index.html"> <img src="img/logo.png"> </a> </div>
+
+			<div id="data">
+				<script language=javascript type="text/javascript">
+					document.write("<p> Hoje é " + dayName[now.getDay()] + ", " + now.getDate() + " de " + monName[now.getMonth()] + " de " + now.getFullYear() + ". </p>")
+				</script>
+			</div>
+
+		</div>
+
+		<div id="menu_principal">
+
+			<div id="menu_item">
+				<a href="index.html">
+
+					
+					<div class="link"> Home </div>
+				</a>
+				<a href="promocoes.html">
+					<div class="link"> Promoções </div>
+				</a>
+				<a href="servicos.html">
+					<div class="link"> Serviços </div>
+				</a>
+				<a href="cardapio.html">
+					<div class="link"> Cardápio </div>
+				</a>
+				<a href="eventos.html">
+					<div class="link"> Eventos </div>
+				</a>
+				<a href="contato.html">
+					<div class="link"> Contatos </div>
+				</a>
+			</div>
+		</div>
+		<div id="conteudo">
+
+			<div id="menu_servicos">
+				<ul>
+					<li> Internet </li>
+					<li> Jogos em Rede </li>
+					<li> Impressão </li>
+					<li> Scanner </li>
+					<li> Gravação em CD/DVD </li>
+					<li> Back-up </li>
+					<li> Bate-Papo </li>
+				</ul>
+			</div>
+
+			<div id="novidades">
+				<h1> Novidades </h1>
+			    <a href="novidades.html"><img src="img/novidades.jpg"></a>
+				<h2> Novos pratos no Cardápio </h2>
+				<p> A Cyber Café, especializada em grelhados e parmegianas, acaba de incluir 10 novos pratos em seu
+					cardápio. </p>
+				<a href="novidaes.html">  leia+ </a>
+				<div class="link"></div>
+			
+			</div>
+
+			<div id="eventos">
+				<h1> Eventos </h1>
+				<a href="eventos.html"><img src="img/eventos.jpg"></a>
+				<h2> 30/07/2023 </h2>
+				<p> Cyber café informa: nos dias 3, 4 e 5 de setembro estaremos com as maquinas alugadas para a
+					realização do evento acervus cup. </p>
+				<a href="eventos.html"> leia+ </a>
+				<div class="link"></div>
+			</div>
+
+			<div id="localizacao">
+				<h1 style="margin-left: 8px; margin-top: 5px;"> Localização </h1>
+				<a href="https://goo.gl/maps/7o5HyxCXivKkJ5aA9" target="_blank"> <img src="img/mapa.jpg"
+						style="margin-left: 8px;"> </a>
+				<p style="margin-left: 8px; margin-top: 5px;"> AV. Brasil 400, Frezarin Americana</p>
+			</div>
+
+			<div id="cardapio">
+				
+				<h1 style="margin-top: 5px;"> Cardápio </h1>
+				<a href="pizza.html"> <img src="img/pizza.png"> </a>
+				<a href="saladas.html"> <img src="img/saladas.png"> </a>
+				<a href="doces.html"> <img src="img/doces.png"> </a>
+				
+			</div>
+
+			<div id="atendimento">
+				<h1 style="margin-left: 8px; margin-top: 5px;"> Atendimento </h1>
+				<P style="margin-left: 8px;"> 19 <span style="font-size: 24px;"> 3458-7898 </span> </P>
+			</div>
+
+		</div>
+
+		<div id="xicara"> <img src="img/xicara.png"> </div>
+		<div id="rodape">
+			<p> 2020-2023 cybercafe.com Todos os direitos reservados </p>
+		</div>
+
+	</div>
+</body>
+
+</html>

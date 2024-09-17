@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cyber Café</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style type="text/css">
+        .promocoes {
+
+            width: 335px;
+            height: 260px;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: 20px;
+            float: left;
+        }
+
+        .foto_cardapio {
+
+            border-style: solid;
+            border-width: 4px;
+            border-color: #ffffff;
+            height: 180px;
+            width: 335px;
+
+        }
+
+        .foto_carpipio:hover {
+
+            border-color: #FFCC00;
+
+        }
+    </style>
+
+    <script language="javascript" type="text/javascript">
+        dayName = new Array("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+        monName = new Array("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto","setembro", "outubro", "novembro", "dezembro")
+        now = new Date
+    </script>
+
+</head>
+
+<body>
+    <div id="principal">
+
+        <div id="topo">
+            <div id="logo"> <a href="index.html"> <img src="img/logo.png"> </a> </div>
+
+            <div id="data">
+                <script language=javascript type="text/javascript">
+                    document.write("<p> Hoje é " + dayName[now.getDay()] + ", " + now.getDate() + " de " + monName[now.getMonth()] + " de " + now.getFullYear() + ". </p>")
+                </script>
+            </div>
+
+        </div>
+
+        <div id="menu_principal">
+
+            <div id="menu_item">
+                <a href="index.html">
+                    <div class="link"> Home </div>
+                </a>
+                <a href="promocoes.html">
+                    <div class="link"> Promoções </div>
+                </a>
+                <a href="servicos.html">
+                    <div class="link"> Serviços </div>
+                </a>
+                <a href="cardapio.html">
+                    <div class="link"> Cardápio </div>
+                </a>
+                <a href="eventos.html">
+                    <div class="link"> Eventos </div>
+                </a>
+                <a href="contato.html">
+                    <div class="link"> Contatos </div>
+                </a>
+            </div>
+        </div>
+        <div id="conteudo">
+
+			<ul>
+				<h1> Internet</h1>
+				<p> aqui no cyber nossa internet é gratuita,e totalmente disponivel,para você, cliente </p>
+				<h1>Jogos em Rede </h1>
+				<p> temos disputas de jogos on-line,venha concorrer </p>
+				<h1> Impressão </h1>
+				<p> imprimimos o que voê precisar,a qualquer hora</p>
+				<h1> Scanner </h1>
+				<p>escaneamos qualquer tipo de documentos  </p>
+				<h1> Gravação em CD/DVD</h1>
+				<p>fazemos gravações todos os dias  </p>
+				<h1> Back-up </h1>
+				<p> faça seu back-up na hora aqui na cyber café</p>
+				<h1>Bate-Papo </h1>
+				<p> temos o nosso grupo de bate-papo cyber</p>
+				</ul>
+
+
+        </div>
+
+
+        <div id="rodape">
+            <p> 2020-2023 cybercafe.com Todos os direitos reservados </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

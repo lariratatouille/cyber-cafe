@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cyber Café</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style type="text/css">
+        .acai {
+
+            width: 210px;
+            height: 260px;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: 20px;
+            float: left;
+        }
+
+        .foto_cardapio {
+
+            border-style: solid;
+            border-width: 4px;
+            border-color: #ffffff;
+            height: 180px;
+            width: 202px;
+
+        }
+
+        .foto_carpipio:hover {
+
+            border-color: #FFCC00;
+
+        }
+    </style>
+
+    <script language="javascript" type="text/javascript">
+        dayName = new Array("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+        monName = new Array("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro","outubro", "novembro", "dezembro")
+        now = new Date
+    </script>
+     <script src="lightbox/js/jquery-1.11.0.min.js"></script>
+     <script src="lightbox/js/lightbox.min.js"></script>
+     <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div id="principal">
+
+        <div id="topo">
+            <div id="logo"> <a href="index.html"> <img src="img/logo.png"> </a> </div>
+
+            <div id="data">
+                <script language=javascript type="text/javascript">
+                    document.write("<p> Hoje é " + dayName[now.getDay()] + ", " + now.getDate() + " de " + monName[now.getMonth()] + " de " + now.getFullYear() + ". </p>")
+                </script>
+            </div>
+
+        </div>
+
+        <div id="menu_principal">
+
+            <div id="menu_item">
+                <a href="index.html">
+                    <div class="link"> Home </div>
+                </a>
+                <a href="promocoes.html">
+                    <div class="link"> Promoções </div>
+                </a>
+                <a href="servicos.html">
+                    <div class="link"> Serviços </div>
+                </a>
+                <a href="cardapio.html">
+                    <div class="link"> Cardápio </div>
+                </a>
+                <a href="eventos.html">
+                    <div class="link"> Eventos </div>
+                </a>
+                <a href="contato.html">
+                    <div class="link"> Contatos </div>
+                </a>
+            </div>
+        </div>
+        <div id="conteudo">
+
+            <div class="acai">
+                <a href="img/acai/puro.jpg" data-lightbox="acai"> <img src="img/acai/puro.jpg" class="foto_cardapio"> </a>
+                <h1> Açaí Puro</h1>
+                <p> Tigela de açaí naturtal. </p>
+            </div>
+
+            <div class="acai">
+                <a href="img/acai/granola.jpg"  data-lightbox="acai"> <img src="img/acai/granola.jpg" class="foto_cardapio"> </a>
+                <h1> Açaí com Granola</h1>
+                <p> Tigela de açaí natural com granola.</p>
+            </div>
+
+            <div class="acai">
+                <a href="img/acai/morango.png"  data-lightbox="acai"> <img src="img/acai/morango.png" class="foto_cardapio"> </a>
+                <h1> Açaí com Morango</h1>
+                <p> Tigela de açaí natural com morango. </p>
+            </div>
+
+            <div class="acai">
+                <a href="img/acai/morango_banana.jpg" data-lightbox="acai"> <img src="img/acai/morango_banana.jpg" class="foto_cardapio"> </a>
+                <h1> Açaí Fruit</h1>
+                <p> Tigela de açaí natural com banana e morango.</p>
+            </div>
+
+            <div class="acai">
+                <a href="img/acai/banana.jpg" data-lightbox="acai"> <img src="img/acai/banana.jpg" class="foto_cardapio"> </a>
+                <h1> Açaí com Banana</h1>
+                <p> Tigela de açaí natuarl com banana. </p>
+            </div>
+
+            <div class="acai">
+                <a href="img/acai/mix.png" data-lightbox="acai"> <img src="img/acai/mix.png" class="foto_cardapio"> </a>
+                <h1> Açaí Mix</h1>
+                <p> Tigela de açaí natural com um mix extraordinário.</p>
+            </div>
+
+
+        </div>
+
+
+        <div id="rodape">
+            <p> 2020-2023 cybercafe.com Todos os direitos reservados </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

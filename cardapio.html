@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Cyber Café</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		.cardapio {
+
+			width: 210px;
+			height: 260px;
+			margin-left: 25px;
+			margin-right: 25px;
+			margin-top: 20px;
+			float: left;
+		}
+
+		.foto_cardapio {
+
+			border-style: solid;
+			border-width: 4px;
+			border-color: #ffffff;
+
+		}
+
+		.foto_carpipio:hover {
+
+			border-color: #FFCC00;
+
+		}
+	</style>
+
+	<script language="javascript" type="text/javascript">
+		dayName = new Array("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+		monName = new Array("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro","outubro", "novembro", "dezembro")
+		now = new Date
+	</script>
+
+</head>
+
+<body>
+	<div id="principal">
+
+		<div id="topo">
+			<div id="logo"> <a href="index.html"> <img src="img/logo.png"> </a> </div>
+
+			<div id="data">
+				<script language=javascript type="text/javascript">
+					document.write("<p> Hoje é " + dayName[now.getDay()] + ", " + now.getDate() + " de " + monName[now.getMonth()] + " de " + now.getFullYear() + ". </p>")
+				</script>
+			</div>
+
+		</div>
+
+		<div id="menu_principal">
+
+			<div id="menu_item">
+				<a href="index.html">
+					<div class="link"> Home </div>
+				</a>
+				<a href="promocoes.html">
+					<div class="link"> Promoções </div>
+				</a>
+				<a href="servicos.html">
+					<div class="link"> Serviços </div>
+				</a>
+				<a href="cardapio.html">
+					<div class="link"> Cardápio </div>
+				</a>
+				<a href="eventos.html">
+					<div class="link"> Eventos </div>
+				</a>
+				<a href="contato.html">
+					<div class="link"> Contatos </div>
+				</a>
+			</div>
+		</div>
+		<div id="conteudo">
+
+			<div class="cardapio">
+				<a href="pizza.html"> <img src="img/cardapio/pizza.jpg" class="foto_cardapio"> </a>
+				<h1> Pizza</h1>
+				<p> Mussarela, bacon, cebola, cream cheese, oregano e ovo de cordona. </p>
+			</div>
+
+			<div class="cardapio">
+				<a href="saladas.html"> <img src="img/cardapio/salada.png" class="foto_cardapio"> </a>
+				<h1> Saladas</h1>
+				<p>  folhas verdes, tomates-cereja, pepino e cenoura, queijo feta, nozes e azeitonas...</p>
+			</div>
+
+			<div class="cardapio">
+				<a href="doces.html"> <img src="img/cardapio/doces.jpg" class="foto_cardapio"> </a>
+				<h1> Doces</h1>
+				<p> Sorvete, Brownie c/sorvete, Petit Gâteau, churros espanhol...</p>
+			</div>
+
+			<div class="cardapio">
+				<a href="sucos.html"> <img src="img/cardapio/sucos.jpg" class="foto_cardapio"> </a>
+				<h1> Sucos</h1>
+				<p> Laranja, Acerola, Abacaxi, Maracujá, Limão, Goiaba, Melancia,Morango... </p>
+			</div>
+
+			<div class="cardapio">
+				<a href="refrigerante.html"> <img src="img/cardapio/refrigerantes.jpg" class="foto_cardapio"> </a>
+				<h1> Refrigerante</h1>
+				<p>Coca-Cola, Guaraná Antarctica, Pepsi, Sprite, Fanta... </p>
+			</div>
+
+			<div class="cardapio">
+				<a href="acai.html"> <img src="img/cardapio/acai.jpg" class="foto_cardapio"> </a>
+				<h1> Açaí</h1>
+				<p> Açaí: acompanhamentos: Granola, Banana, Leite em pó, Leite condensado, Morango... </p>
+			</div>
+
+
+		</div>
+
+
+		<div id="rodape">
+			<p> 2020-2023 cybercafe.com Todos os direitos reservados </p>
+		</div>
+
+	</div>
+</body>
+
+</html>

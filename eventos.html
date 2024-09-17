@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cyber Café</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style type="text/css">
+        .eventos {
+
+            width: 335px;
+            height: 260px;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: 20px;
+            float: left;
+        }
+
+        .foto_cardapio {
+
+            border-style: solid;
+            border-width: 4px;
+            border-color: #ffffff;
+            height: 180px;
+            width: 335px;
+
+        }
+
+        .foto_carpipio:hover {
+
+            border-color: #FFCC00;
+
+        }
+    </style>
+
+    <script language="javascript" type="text/javascript">
+        dayName = new Array("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+        monName = new Array("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto","setembro", "outubro", "novembro", "dezembro")
+        now = new Date
+    </script>
+
+</head>
+
+<body>
+    <div id="principal">
+
+        <div id="topo">
+            <div id="logo"> <a href="index.html"> <img src="img/logo.png"> </a> </div>
+
+            <div id="data">
+                <script language=javascript type="text/javascript">
+                    document.write("<p> Hoje é " + dayName[now.getDay()] + ", " + now.getDate() + " de " + monName[now.getMonth()] + " de " + now.getFullYear() + ". </p>")
+                </script>
+            </div>
+
+        </div>
+
+        <div id="menu_principal">
+
+            <div id="menu_item">
+                <a href="index.html">
+                    <div class="link"> Home </div>
+                </a>
+                <a href="promocoes.html">
+                    <div class="link"> Promoções </div>
+                </a>
+                <a href="servicos.html">
+                    <div class="link"> Serviços </div>
+                </a>
+                <a href="cardapio.html">
+                    <div class="link"> Cardápio </div>
+                </a>
+                <a href="eventos.html">
+                    <div class="link"> Eventos </div>
+                </a>
+                <a href="contato.html">
+                    <div class="link"> Contatos </div>
+                </a>
+            </div>
+        </div>
+        <div id="conteudo">
+
+            <div class="eventos">
+                <a href="eventos.html"> <img src="img/eventos/evento_01.png" class="foto_cardapio"> </a>
+                <h1> Café com Networking</h1>
+                <p> Dia 23/08/2024 só aqui na Cyber café. </p>
+            </div>
+
+            <div class="eventos">
+                <a href="eventos.html"> <img src="img/eventos/gato.jpg" class="foto_cardapio"> </a>
+                <h1> Cyber Com Gato</h1>
+                <p> Dia 01/09/2024 um dia único e especial para você aproveitar e tomar um café com gatos.</p>
+            </div>
+
+            <div class="eventos">
+                <a href="eventos.html"> <img src="img/eventos/jao.jpg" class="foto_cardapio"> </a>
+                <h1> Show do Jão </h1>
+                <p> Dia 20/09/ a cyber café vai estar proporcionando um show do Jãoi para todos os nossos Clientes.</p>
+            </div>
+
+            <div class="eventos">
+                <a href="eventos.html"> <img src="img/eventos/livro.jpg" class="foto_cardapio"> </a>
+                <h1> Café com Leitura</h1>
+                <p> Dia 02/09/2024, o dia dos leitores na cyber café. </p>
+            </div>
+
+
+
+        </div>
+
+
+        <div id="rodape">
+            <p> 2020-2023 cybercafe.com Todos os direitos reservados </p>
+        </div>
+
+    </div>
+</body>
+
+</html>
